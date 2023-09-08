@@ -1,0 +1,162 @@
+#n1, #results div, #win_panel, #win_panel-title, #win_panel-container {
+  justify-content: center;
+  align-items: center;
+}
+
+#n1, #control_panel, #results, #results div, #win_panel, #win_panel-btn, #win_panel-title, #win_panel-container {
+  display: flex;
+}
+
+#turn, #Draw, #reset {
+  background-color: #aabfca;
+}
+
+body {
+  background-color: rgb(26, 43, 51);
+  font-family: "consolas";
+}
+
+#container {
+  height: 400px;
+  width: 450px;
+}
+
+/*=======================================================================================*/
+/*                              <!-- control_panel -->                                   */
+/*=======================================================================================*/
+#control_panel {
+  width: 410px;
+  justify-content: space-between;
+}
+#control_panel #xo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80px;
+  font-size: 50px;
+  font-weight: bolder;
+  font-family: sans-serif;
+}
+#control_panel #xo #x1 {
+  color: #30c5be;
+}
+#control_panel #xo #o2 {
+  color: #f0b336;
+  font-size: 40px;
+}
+
+#turn {
+  height: 30px;
+  width: 130px;
+  text-align: center;
+  border-radius: 7px;
+  margin-right: 28px;
+}
+
+#reset {
+  height: 42px;
+  width: 42px;
+  border-radius: 7px;
+  box-shadow: 0px 4px 2px #3e3e3e;
+  color: rgb(54, 54, 54);
+}
+#reset:hover {
+  cursor: pointer;
+}
+
+/*=======================================================================================*/
+/*                                 <!-- The Board -->                                    */
+/*=======================================================================================*/
+#n1 {
+  margin: 12px;
+  color: white;
+  color: #30c5be;
+  background-color: #1e3640;
+  border-radius: 10px;
+  height: 27%;
+  width: 26%;
+  font-size: 4rem;
+  box-shadow: 2px 5px 11px black;
+  transition: 0.2s;
+}
+#n1:hover {
+  background-color: #aabfca;
+}
+
+/*=======================================================================================*/
+/*                               <!-- results panel -->                                  */
+/*=======================================================================================*/
+#results {
+  width: 430px;
+}
+#results div {
+  height: 80%;
+  width: 30%;
+  border-radius: 15px;
+  flex-flow: column nowrap;
+}
+#results div .results-txt {
+  font-size: 17px;
+  font-weight: normal;
+}
+
+#x_wins {
+  background-color: #30c5be;
+}
+
+#o_wins {
+  background-color: #f0b336;
+}
+
+#x_wins, #o_wins, #Draw {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/*=======================================================================================*/
+/*                               <!-- win panel -->                                      */
+/*=======================================================================================*/
+#win_panel {
+  display: none;
+  flex-flow: column nowrap;
+  background-color: rgba(26, 43, 51, 0.6);
+}
+#win_panel #win_panel-container {
+  background-color: #1e3640;
+  flex-flow: column wrap;
+}
+#win_panel #win_panel-title {
+  width: 490px;
+  font-size: 45px;
+  font-weight: bolder;
+}
+#win_panel #win_panel-title i {
+  margin-right: 19px;
+  font-size: 60px;
+}
+#win_panel #win_panel-title i.fa-xmark {
+  color: #30c5be;
+}
+#win_panel #win_panel-title i.fa-o {
+  color: #f0b336;
+}
+#win_panel #win_panel-btn {
+  width: 330px;
+}
+#win_panel #win_panel-btn p {
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 2px 6px 6px 2px #3e3e3e;
+}
+#win_panel #win_panel-btn #win_panel-btn-quit {
+  width: 100px;
+  background-color: #aabfca;
+}
+#win_panel #win_panel-btn #win_panel-btn-next_round {
+  background-color: #f0b336;
+  width: 140px;
+}
+
+/*=======================================================================================*/
+/*                               <!-- results panel -->                                  */
+/*=======================================================================================*//*# sourceMappingURL=style.css.map */

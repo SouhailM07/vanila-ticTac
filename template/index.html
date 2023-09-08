@@ -1,0 +1,103 @@
+<!-- http://127.0.0.1:5500/template/index.html-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css files -->
+    <link rel="stylesheet" href="../sass/style.css" />
+    <!-- tailwindcss file -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="../css/all.css" />
+    <!-- jquery -->
+    <script src="../tools/jquery-3.6.4.min.js"></script>
+  </head>
+
+  <body class="flex flex-col justify-center items-center h-screen">
+    <!-- <i class="fa-solid fa-xmark"></i> { x mark} -->
+    <!-- <i class="fa-solid fa-o"></i> { o mark} -->
+
+    <!--===================================================================================-->
+    <!-- control_panel -->
+    <!--===================================================================================-->
+
+    <div id="control_panel" class="h-12 m-2 flex justify-center items-center">
+      <div id="xo">
+        <i id="x1" class="fa-solid fa-xmark xo"></i
+        ><i class="fa-solid fa-o xo" id="o2"></i>
+      </div>
+      <div id="turn">Start</div>
+      <div id="reset" class="grid place-items-center text-xl">
+        <i class="fa-solid fa-arrow-rotate-right"></i>
+      </div>
+    </div>
+
+    <!--===================================================================================-->
+    <!-- The Board -->
+    <!--===================================================================================-->
+
+    <div id="container" class="flex justify-evenly items-center flex-wrap">
+      <div id="n1" class="n-1"></div>
+      <div id="n1" class="n-2"></div>
+      <div id="n1" class="n-3"></div>
+      <div id="n1" class="n-4"></div>
+      <div id="n1" class="n-5"></div>
+      <div id="n1" class="n-6"></div>
+      <div id="n1" class="n-7"></div>
+      <div id="n1" class="n-8"></div>
+      <div id="n1" class="n-9"></div>
+    </div>
+
+    <!--===================================================================================-->
+    <!-- results panel -->
+    <!--===================================================================================-->
+
+    <div id="results" class="m-3 h-16 flex justify-around items-center">
+      <div id="x_wins" class="">
+        <p class="results-txt">x wins</p>
+        <p>1</p>
+      </div>
+      <div id="Draw" class="">
+        <p class="results-txt">Draw</p>
+        <p>2</p>
+      </div>
+      <div id="o_wins" class="">
+        <p class="results-txt">o wins</p>
+        <p>3</p>
+      </div>
+    </div>
+
+    <!--===================================================================================-->
+    <!-- win panel -->
+    <!--===================================================================================-->
+
+    <div id="win_panel" class="absolute h-full w-full">
+      <div id="win_panel-container" class="w-full h-52">
+        <div id="win_panel-title" class="h-1/2"></div>
+        <div id="win_panel-btn" class="justify-around items-center h-1/2">
+          <p
+            id="win_panel-btn-quit"
+            class="grid place-items-center hover:cursor-pointer"
+          >
+            Quit
+          </p>
+          <p
+            id="win_panel-btn-next_round"
+            class="grid place-items-center hover:cursor-pointer"
+          >
+            next round
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--===================================================================================-->
+    <!-- columns -->
+    <!--===================================================================================-->
+
+    <script src="../dist/sb.js"></script>
+  </body>
+</html>

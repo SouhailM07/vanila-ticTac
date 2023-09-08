@@ -1,0 +1,217 @@
+// main vars
+$o_color: #f0b336;
+$x_color: #30c5be;
+$Draw_color:#aabfca;
+
+
+// same e 
+
+#n1,#results div ,#win_panel ,#win_panel-title,#win_panel-container{
+    justify-content: center;
+    align-items: center;
+}
+
+#n1,#control_panel,#results,#results div ,#win_panel,#win_panel-btn,#win_panel-title,#win_panel-container{
+    display: flex;
+}
+
+#turn,#Draw,#reset{
+    background-color: $Draw_color;
+}
+
+// the rest
+
+body{
+    background-color:rgb(26 43 51);
+    font-family: 'consolas';
+}
+
+#container /* it's board container */ {
+    height:400px;
+    width:450px;
+    
+}
+
+/*=======================================================================================*/
+/*                              <!-- control_panel -->                                   */
+/*=======================================================================================*/
+
+#control_panel{
+    width: 410px;
+    justify-content: space-between;
+    
+    #xo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80px;
+        
+        #x1 {
+            color: $x_color;
+        }
+        #o2{
+            color: $o_color;
+            font-size: 40px;
+            
+        }
+        
+        font-size: 50px;
+        font-weight: bolder;
+        // margin-bottom: 12px;
+        font-family: sans-serif;
+        
+    }
+}
+
+
+
+#turn{
+    height: 30px;
+    width: 130px;
+    text-align: center;
+    border-radius: 7px;
+    margin-right: 28px;
+}
+
+#reset{
+    height: 42px;
+    width: 42px;
+    border-radius: 7px;
+    box-shadow: 0px 4px 2px #3e3e3e;
+    color:rgb(54, 54, 54);
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+/*=======================================================================================*/
+/*                                 <!-- The Board -->                                    */
+/*=======================================================================================*/
+
+
+
+
+#n1{
+    margin: 12px;
+    color:white;
+    // padding-bottom: 10px;
+    color: #30c5be;
+    background-color: #1e3640;
+    border-radius: 10px;
+    height: 27%; 
+    width: 26%;
+    font: {
+        size:4rem;
+    }
+    box-shadow: 2px 5px 11px black;
+    transition: 0.2s;
+    &:hover{
+        background-color:$Draw_color;
+    }
+}
+
+
+/*=======================================================================================*/
+/*                               <!-- results panel -->                                  */
+/*=======================================================================================*/
+
+
+#results{
+    width: 430px;
+    div{
+        height:80%;
+        width: 30%;
+        border-radius: 15px;
+        flex-flow: column nowrap;
+        .results-txt{
+            font-size:17px;
+            font-weight: normal;
+        }
+    }
+}
+
+
+
+#x_wins{
+    background-color: $x_color;
+}
+#o_wins{
+    background-color: $o_color;
+}
+
+
+#x_wins,#o_wins,#Draw{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+/*=======================================================================================*/
+/*                               <!-- win panel -->                                      */
+/*=======================================================================================*/
+
+
+
+#win_panel{
+    display: none;
+    flex-flow: column nowrap;
+    background-color:rgb(26 43 51/60%);
+    
+    #win_panel-container{
+        background-color:#1e3640;
+        flex-flow: column wrap;
+    }
+    
+    #win_panel-title{
+        width: 490px;
+        i{
+            margin-right:19px;
+            font-size: 60px;
+        }
+        i.fa-xmark{
+            color:#30c5be
+        }
+        i.fa-o{
+            color: #f0b336;
+        }
+        font: {
+            size:45px;
+            weight:bolder;
+        }
+        
+        
+    }
+    #win_panel-btn{
+        width: 330px;
+        
+        p{
+            height: 50px;  
+            border-radius: 10px;
+            box-shadow: 2px 6px  6px 2px #3e3e3e;
+        }
+        
+        #win_panel-btn-quit{
+            width: 100px;
+            background-color:$Draw_color;
+            
+        }
+        #win_panel-btn-next_round{
+            background-color:$o_color;
+            width: 140px;
+        }
+    }
+}
+
+
+/*=======================================================================================*/
+/*                               <!-- results panel -->                                  */
+/*=======================================================================================*/
+
+// .clm{
+//     outline: none;
+//     height: 10px;
+//     background-color: red;
+//     width: 400px;
+//     position: absolute;
+// }
+    
